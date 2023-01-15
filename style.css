@@ -57,7 +57,7 @@
 
 .timer
 {
-	font-size: 50px;
+	font-size: 45px;
 	padding: 1%;
 	margin: auto;
 	width: 50%;
@@ -70,9 +70,9 @@
 @keyframes loseAnimation
 {
 	0% { font-size: 35px;}
-	10% {font-size: 60px;}
-	20% {font-size: 45px;}
-	30% {font-size: 50px;}
+	10% {font-size: 45px;}
+	20% {font-size: 35px;}
+	30% {font-size: 45px;}
 }
 .timer.loseScreen
 {
