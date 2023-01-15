@@ -1,0 +1,88 @@
+.header
+{
+	font-family:sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	margin:auto;
+	width: 50%;
+	padding: 10px;
+	font-size: large;
+	font-weight: 900;
+	color: rgb(121, 121, 121);
+}
+
+.body
+{
+	font-family: monospace;
+	margin: auto;
+	width: 85%;
+	font-size: smaller;
+}
+
+.container
+{
+	display: flex;
+}
+
+.fireButton
+{
+	margin: auto;
+	margin-top: 25px;
+	padding: 15px 25px 15px 25px;
+	width: 50%;
+	font-family: sans-serif;
+	font-weight: 900;
+	border-width: 0px;
+	border-radius: 25px;
+	background-color: rgb(46, 74, 80);
+	color: white;
+	box-shadow: 0 5px rgb(138, 138, 138);
+
+}
+.fireButton:hover
+{
+	background-color: rgb(78, 125, 136);
+	transition: background-color 0.25s ease-in-out;
+}
+.fireButton:active
+{
+	background-color: rgb(26, 41, 44);
+	box-shadow: 0 2px rgb(117, 117, 117);
+	transform: translateY(4px);
+	transition: all 0.1s ease-in-out;
+
+}
+
+.timer
+{
+	font-size: 50px;
+	padding: 1%;
+	margin: auto;
+	width: 50%;
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: 900;
+	color: rgb(184, 184, 184);
+}
+
+@keyframes loseAnimation
+{
+	0% { font-size: 35px;}
+	10% {font-size: 60px;}
+	20% {font-size: 45px;}
+	30% {font-size: 50px;}
+}
+.timer.loseScreen
+{
+	/* font-size: 35px; */
+	color: brown;
+	width: 100%;
+
+	transition: color 0.5s ease-in-out;
+	animation: loseAnimation 1.5s;
+}
+
+hr.divider
+{
+	border-top: 1px solid grey;
+}
