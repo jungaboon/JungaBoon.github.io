@@ -1,7 +1,7 @@
 var startTimer;
 var def_startTimer = 10;
-var minSpeed = 100;
-var maxSpeed = 10;
+var minSpeed = 50;
+var maxSpeed = 1;
 var interval = window.setInterval(DecreaseTimer, GetRandomSpeed(minSpeed,maxSpeed));
 var timerText = document.getElementById("timer");
 var actionButton = document.getElementById("actionButton");
@@ -43,16 +43,10 @@ function Fire()
     }
     else
     {
-        let amount = Math.floor(Math.random()*6);
+        let amount = Math.floor(Math.random()*4);
         startTimer += amount;
         let timer = ('000' + startTimer).slice(-3);
         timerText.innerHTML = timer.toString();
-
-        for (let i = 0; i < amount; i++)
-        {
-            console.log("Fire");
-            // Add some sort of visual element here
-        }
     }
 }
 
