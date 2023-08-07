@@ -5,6 +5,7 @@
 	width: 35%;
 	max-width: 600px;
 	margin-top: 3%;
+	margin-left: 5%;
 	height: 250px;
 	max-height: 450px;
 	padding-left: 50px;
@@ -57,8 +58,8 @@
 	width: 70%;
 	max-width: 820px;
 	height: 80%;
-	margin-left: auto;
-	right: 50px;
+	margin-left: 35%;
+	margin-right: 5%;
 }
 
 .tab, .film, .illustration, .gameDev
