@@ -3,15 +3,18 @@
 .titleContainer
 {
 	display: flex;
-	justify-content: space-around;
+	flex-direction: column;
+	padding: 0px;
 }
 
 .header
 {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 200;
+	font-size: 14px;
 	position: relative;
-	top: 300px;
+	left: 140px;
+	top: 10px;
 }
 
 .title
