@@ -2,21 +2,14 @@
 
 .logo
 {
-	width: 35%;
-	max-width: 600px;
-	margin-top: 3%;
-	margin-left: 5%;
-	height: 250px;
-	max-height: 450px;
-	padding-left: 50px;
-	padding-top: 40px;
+	padding: 40px;
 }
 
 .titleContainer
 {
-	display: flex;
-	flex-direction: column;
-	max-width: 50%;
+	display: grid;
+	grid-template-rows: 720px;
+	grid-template-columns: 30% 70%;
 }
 
 .header
@@ -51,25 +44,19 @@
 
 .tabHolder
 {
+	grid-area: 1 / 2 / 1 / 2;
 	display: flex;
 	justify-content: space-between;
-	position: fixed;
-	top: 80px;
-	width: 70%;
-	max-width: 820px;
-	height: 80%;
-	margin-left: 35%;
-	margin-right: 5%;
 }
 
 .tab, .film, .illustration, .gameDev
 {
 	height: 100%;
 	width: 100%;
-	max-width: 250px;
-	margin-left: 1%;
-	margin-right: 1%;
-	border-radius: 20px 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 70px;
+	border-radius: 15px 15px;
 }
 
 .film
