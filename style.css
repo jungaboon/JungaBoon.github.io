@@ -49,7 +49,7 @@
 	justify-content: space-between;
 }
 
-.tab, .film, .illustration, .gameDev
+.tab, .tab1, .tab2, .tab3
 {
 	height: 100%;
 	width: 100%;
@@ -57,19 +57,46 @@
 	margin-right: 10px;
 	margin-top: 70px;
 	border-radius: 15px 15px;
+	overflow: hidden;
+
+	transition-property: transform;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
 }
 
-.film
+.tab:hover, .tab1:hover, .tab2:hover, .tab3:hover
+{
+	transform: translateY(-30px);
+}
+
+.tab1
 {
 	background-image: linear-gradient(to bottom, #F4E9E9, #ffffff00);
 }
 
-.illustration
+.tab2
 {
 	background-image: linear-gradient(to bottom, #F2F4E9, #ffffff00);
 }
 
-.gameDev
+.tab3
 {
 	background-image: linear-gradient(to bottom, #EFE9F4, #ffffff00);
+}
+
+.tabImg
+{
+	opacity: 30%;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+
+	transition-property: opacity;
+	transition-duration: 0.35s;
+	transition-timing-function: ease-in-out;
+}
+
+.tabImg:hover
+{
+	opacity: 100%;
 }
