@@ -90,22 +90,27 @@
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
+	-webkit-mask-image: linear-gradient(rgba(0,0,0,1), transparent);
 	mask-image: linear-gradient(rgba(0,0,0,1), transparent);
 
-	transition-property: opacity;
+	transition-property: opacity, transform;
 	transition-duration: 0.35s;
 	transition-timing-function: ease-in-out;
 }
 
 .tabImg:hover
 {
+	transform: scale(1.15);
+
 	opacity: 100%;
 	-webkit-filter: blur(2px);
+	filter: blur(2px);
 }
 
 .tabTitle
 {
 	-webkit-user-select: none;
+	user-select: none;
 	pointer-events: none;
 
 	font-family: 'Poppins', sans-serif;
