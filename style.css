@@ -1,5 +1,16 @@
 @import url('//fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+body::-webkit-scrollbar
+{
+	display: none;
+}
+
+body
+{
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
 .logo
 {
 	padding: 40px;
@@ -19,6 +30,36 @@
 	font-size: 14px;
 	position: relative;
 	text-align: right;
+
+	animation: fade-in 1s;
+}
+
+@keyframes fade-in
+{
+	0%
+	{
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	100%
+	{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+@keyframes fade-in-tab
+{
+	0%
+	{
+		opacity: 0;
+		transform: translateY(80px);
+	}
+	100%
+	{
+		opacity: 1;
+		transform: translateY(0px);
+	}
 }
 
 .title
@@ -59,6 +100,10 @@
 	border-radius: 15px 15px;
 	overflow: hidden;
 
+	animation: fade-in-tab 1s;
+	animation-fill-mode: backwards;
+
+
 	transition-property: transform;
 	transition-duration: 0.3s;
 	transition-timing-function: ease-in-out;
@@ -72,16 +117,22 @@
 .tab1
 {
 	background-image: linear-gradient(to bottom, #F4E9E9, #ffffff00);
+
+	animation-delay: 0s;
 }
 
 .tab2
 {
 	background-image: linear-gradient(to bottom, #F2F4E9, #ffffff00);
+	
+	animation-delay: 0.25s;
 }
 
 .tab3
 {
 	background-image: linear-gradient(to bottom, #EFE9F4, #ffffff00);
+
+	animation-delay: 0.5s;
 }
 
 .tabImg
@@ -144,4 +195,36 @@
 .tab3:hover .tabTitle{
 	opacity: 100%;
 	top: 50%;
+}
+
+.segmentContainer
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15%;
+
+	margin-left: -8px;
+	margin-right: -8px;
+}
+
+.segmentText
+{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 200;
+	font-size: 14px;
+}
+
+.segmentBG
+{
+	object-fit: cover;
+	width: 100vw;
+}
+
+.bgContainer
+{
+	/* height: 1080px;	 */
+	-webkit-mask-image: linear-gradient(rgba(0,0,0,1), 60%, transparent);
+	
+	mask-image: linear-gradient(rgba(0,0,0,1), 60%, transparent);
 }
