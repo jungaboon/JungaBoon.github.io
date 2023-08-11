@@ -220,6 +220,8 @@ body
 	transition-property: transform;
 	transition-duration: 0.4s;
 	transition-timing-function: ease-in-out;
+
+
 }
 
 .bg1
@@ -235,4 +237,28 @@ body
 .bg3
 {
 	background-image: url("images/bg3.jpeg");
+}
+
+.bg4
+{
+	background-image: url("https://images.pexels.com/photos/4751278/pexels-photo-4751278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+
+.segmentText
+{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-size: 50px;
+	background: rgba(0, 0, 0, 0.294);
+	color: #ffffff;
+	text-align: center;
+
+	padding-top: 50vh;
+	padding-bottom: 50vh;
+}
+
+.segmentSmallText
+{
+	font-weight: 200;
+	font-size: large;
 }
