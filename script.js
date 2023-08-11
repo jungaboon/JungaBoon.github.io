@@ -18,10 +18,20 @@ const welcomeMsg =
     "What is love? Baby don't hurt me!",
     "Where we're going, we don't need roads.",
     "You feeling lucky? Are you?",
-    "Under construction."
+    "Under construction.",
+    "She's a maneater!",
+    "You wanna get nuts? Let's get nuts."
 ]
 
 var welcomeText = document.getElementById("welcomeMsg");
+var tabHoverSFX = document.getElementById("tabHover");
+var tab1 = document.getElementById("tab1");
+var tab2 = document.getElementById("tab2");
+var tab3 = document.getElementById("tab3");
+
+tab1.addEventListener("mouseover", tab_hover);
+tab2.addEventListener("mouseover", tab_hover);
+tab3.addEventListener("mouseover", tab_hover);
 
 function load_welcome_msg()
 {
@@ -29,6 +39,12 @@ function load_welcome_msg()
     let index = Math.floor(Math.random() * i);
 
     welcomeText.innerHTML = welcomeMsg[index];
+}
+
+function tab_hover()
+{
+    tabHoverSFX.currentTime=0;
+    tabHoverSFX.play();
 }
 
 load_welcome_msg();

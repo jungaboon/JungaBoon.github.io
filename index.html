@@ -8,6 +8,10 @@
 	<title>JungaBoon Home</title>
 </head>
 <body>
+	<audio id="tabHover" preload="auto">
+		<source src="audio/tabHover.mp3">
+	</audio>
+
 	<div class="titleContainer">
 		<div class="logo">
 			<img src="images/JB_Logo.svg">
@@ -23,31 +27,37 @@
 		</div>
 		<div class="tabHolder">
 			<div class="tab1">
-				<img src="images/tab01_b.jpg" class="tabImg">
-				<div class="tabTitle">ILLUSTRATIONS</div>
+				<a href="#segment1">
+					<img src="images/tab01_b.jpg" class="tabImg" id="tab1">
+					<div class="tabTitle">ILLUSTRATIONS</div>
+				</a>
 			</div>
 			<div class="tab2">
-				<img src="images/tab02_b.jpg" class="tabImg">
-				<div class="tabTitle">FILM</div>
+				<a href="#segment2">
+					<img src="images/tab02_b.jpg" class="tabImg" id="tab2">
+					<div class="tabTitle">FILM</div>
+				</a>
 			</div>
 			<div class="tab3">
-				<img src="images/tab03_b.jpg" class="tabImg">
-				<div class="tabTitle">GAME DEVELOPMENT</div>
+				<a href="#segment3">
+					<img src="images/tab03_b.jpg" class="tabImg" id="tab3">
+					<div class="tabTitle">GAME DEVELOPMENT</div>
+				</a>
 			</div>
 		</div>
 	</div>
-	<!-- <div style="margin-top: 25vh;"></div>
+	<div style="margin-top: 25vh;"></div>
 	<div class="segmentContainer">
 		<div class="bgContainer">
-			<img src="https://images.pexels.com/photos/15665644/pexels-photo-15665644/free-photo-of-iceland-vestrahorn.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="segmentBG">
+			<img src="https://images.pexels.com/photos/15665644/pexels-photo-15665644/free-photo-of-iceland-vestrahorn.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="segmentBG" id="segment1">
 		</div>
 		<div class="bgContainer">
-			<img src="https://images.pexels.com/photos/17662747/pexels-photo-17662747/free-photo-of-wood-bird-summer-animal.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="segmentBG">
+			<img src="https://images.pexels.com/photos/17662747/pexels-photo-17662747/free-photo-of-wood-bird-summer-animal.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="segmentBG" id="segment2">
 		</div>
 		<div class="bgContainer">
-			<img src="https://images.pexels.com/photos/17059194/pexels-photo-17059194/free-photo-of-aerial-view-of-a-rocky-mountain-peak.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="segmentBG">
+			<img src="https://images.pexels.com/photos/17059194/pexels-photo-17059194/free-photo-of-aerial-view-of-a-rocky-mountain-peak.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="segmentBG" id="segment3">
 		</div>
-	</div> -->
+	</div>
 	
 	<script src="script.js"></script>
 </body>
