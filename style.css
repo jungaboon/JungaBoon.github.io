@@ -108,7 +108,6 @@ body
 	animation: fade-in-tab 1s;
 	animation-fill-mode: backwards;
 
-
 	transition-property: transform;
 	transition-duration: 0.3s;
 	transition-timing-function: ease-in-out;
@@ -123,21 +122,18 @@ body
 .tab1
 {
 	background-image: linear-gradient(to bottom, #F4E9E9, #ffffff00);
-
 	animation-delay: 0s;
 }
 
 .tab2
 {
 	background-image: linear-gradient(to bottom, #F2F4E9, #ffffff00);
-	
 	animation-delay: 0.25s;
 }
 
 .tab3
 {
 	background-image: linear-gradient(to bottom, #EFE9F4, #ffffff00);
-
 	animation-delay: 0.5s;
 }
 
