@@ -217,6 +217,16 @@ body
 	font-size: 14px;
 }
 
+.segmentHeader
+{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-size: 150%;
+	position: absolute;
+	margin-top: 30px;
+	z-index: 1;
+}
+
 .segmentBG
 {
 	object-fit: cover;
