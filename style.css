@@ -14,6 +14,8 @@ body
 {
 	-ms-overflow-style: none;
 	scrollbar-width: none;
+	margin: 0px;
+	padding: 0px;
 }
 
 .logo
@@ -199,44 +201,38 @@ body
 	top: 50%;
 }
 
-.segmentContainer
-{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 25px;
-
-	margin-left: -8px;
-	margin-right: -8px;
-}
-
-.segmentText
-{
-	font-family: 'Poppins', sans-serif;
-	font-weight: 200;
-	font-size: 14px;
-}
-
-.segmentHeader
-{
-	font-family: 'Poppins', sans-serif;
-	font-weight: 700;
-	font-size: 150%;
-	position: absolute;
-	margin-top: 30px;
-	z-index: 1;
-}
-
-.segmentBG
-{
-	object-fit: cover;
-	width: 100vw;
-	height: 100vh;
-}
-
 .bgContainer
 {
 	overflow: hidden;
-	-webkit-mask-image: linear-gradient(rgba(0,0,0,1), 60%, transparent);
-	mask-image: linear-gradient(rgba(0,0,0,1), 60%, transparent);
+	/* -webkit-mask-image: linear-gradient(rgba(0,0,0,1), 60%, transparent);
+	mask-image: linear-gradient(rgba(0,0,0,1), 60%, transparent); */
+}
+
+.background
+{
+	min-height: 100vh;
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	transition-property: transform;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in-out;
+}
+
+.bg1
+{
+	background-image: url("images/bg1.jpeg");
+}
+
+.bg2
+{
+	background-image: url("images/bg2.jpeg");
+}
+
+.bg3
+{
+	background-image: url("images/bg3.jpeg");
 }

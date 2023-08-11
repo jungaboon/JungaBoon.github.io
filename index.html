@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="style.css">
 	<title>JungaBoon Home</title>
 </head>
-<body id="body">
+<body>
 	<audio id="tabHover" preload="auto">
 		<source src="audio/tabHover.mp3">
 	</audio>
@@ -27,19 +27,19 @@
 		</div>
 		<div class="tabHolder">
 			<div class="tab1">
-				<a href="#segment1">
+				<a href="#illustrations">
 					<img src="images/tab01_b.jpg" class="tabImg" id="tab1">
 					<div class="tabTitle">ILLUSTRATIONS</div>
 				</a>
 			</div>
 			<div class="tab2">
-				<a href="#segment2">
+				<a href="#films">
 					<img src="images/tab02_b.jpg" class="tabImg" id="tab2">
 					<div class="tabTitle">FILM</div>
 				</a>
 			</div>
 			<div class="tab3">
-				<a href="#segment3">
+				<a href="#gamedev">
 					<img src="images/tab03_b.jpg" class="tabImg" id="tab3">
 					<div class="tabTitle">GAME DEVELOPMENT</div>
 				</a>
@@ -47,18 +47,14 @@
 		</div>
 	</div>
 	<div style="margin-top: 25vh;"></div>
-	<div class="segmentContainer">
-		<div class="bgContainer">
-			<img src="https://images.pexels.com/photos/15665644/pexels-photo-15665644/free-photo-of-iceland-vestrahorn.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="segmentBG" id="segment1">
-		</div>
-		<div class="bgContainer">
-			<img src="https://images.pexels.com/photos/17662747/pexels-photo-17662747/free-photo-of-wood-bird-summer-animal.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="segmentBG" id="segment2">
-		</div>
-		<div class="bgContainer">
-			<img src="https://images.pexels.com/photos/17059194/pexels-photo-17059194/free-photo-of-aerial-view-of-a-rocky-mountain-peak.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="segmentBG" id="segment3">
+
+	<div class="bgContainer">
+		<div class="background">
+			<div class="background bg1" id="illustrations"></div>
+			<div class="background bg2" id="films"></div>
+			<div class="background bg3" id="gamedev"></div>
 		</div>
 	</div>
-
 	<script src="script.js"></script>
 </body>
 </html>
