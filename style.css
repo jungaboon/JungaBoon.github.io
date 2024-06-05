@@ -1,264 +1,129 @@
-@import url('//fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-html
-{
-	scroll-behavior: smooth;
+:root{
+    font-family: Josefin Sans;
+    background-color: rgb(244, 241, 237);
 }
 
-body::-webkit-scrollbar
-{
-	display: none;
+a{
+    text-decoration: none;
 }
 
-body
-{
-	-ms-overflow-style: none;
-	scrollbar-width: none;
-	margin: 0px;
-	padding: 0px;
+.menu-holder{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 20px auto;
+    gap: 50px;
 }
 
-.logo
-{
-	padding: 40px;
+.menu-item{
+    font-size: 16px;
+    text-align: center;
+    color: grey;
+    padding: 20px 20px;
+
+    transition-duration: 0.25s;
 }
 
-.titleContainer
-{
-	display: grid;
-	grid-template-rows: 720px;
-	grid-template-columns: 30% 70%;
+.menu-item:hover{
+    color: rgb(197, 70, 114);
+    cursor: pointer;
 }
 
-.header
-{
-	font-family: 'Poppins', sans-serif;
-	font-weight: 200;
-	font-size: 14px;
-	position: relative;
-	text-align: right;
-
-	animation: fade-in 1s;
+.flavor-text{
+    color: gray;
 }
 
-@keyframes fade-in
-{
-	0%
-	{
-		opacity: 0;
-		transform: translateY(30px);
-	}
-	100%
-	{
-		opacity: 1;
-		transform: translateY(0px);
-	}
+.divider{
+    width: 0px;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(228, 137, 68);
+
+    transition-duration: 1s;
 }
 
-@keyframes fade-in-tab
-{
-	0%
-	{
-		opacity: 0;
-		transform: translateY(80px);
-	}
-	100%
-	{
-		opacity: 1;
-		transform: translateY(0px);
-	}
+.title-holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.title
-{
-	font-family: 'Poppins', sans-serif;
-	font-weight: 600;
-	font-size: 140px;
-	line-height: 80%;
-	color:rgb(121, 121, 121);
+.title{
+    font-size: 60px;
+    user-select: none;
 }
 
-.bodyText
-{
-	font-family: 'Poppins', sans-serif;
-	font-size: smaller;
-
-	display: flex;
-	justify-content: center;
-	margin-left: auto;
-	margin-right: auto;
-	width: 60%;
+.sub-title{
+    font-size: 18px;
+    width: 40%;
+    margin: 0px auto;
+    text-align: center;
 }
 
-.tabHolder
-{
-	grid-area: 1 / 2 / 1 / 2;
-	display: flex;
-	justify-content: space-between;
+.icon-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
-.tab, .tab1, .tab2, .tab3
-{
-	height: 100%;
-	width: 100%;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-top: 70px;
-	border-radius: 15px 15px;
-	overflow: hidden;
-
-	animation: fade-in-tab 1s;
-	animation-fill-mode: backwards;
-
-	transition-property: transform;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-in-out;
+.icon-container > * {
+    grid-area: 1/1;
 }
 
-.tab:hover, .tab1:hover, .tab2:hover, .tab3:hover
-{
-	transform: translateY(-30px);
-	cursor: pointer;
+.icon{
+    width: 300px;
+    margin: 0px auto;
 }
 
-.tab1
-{
-	background-image: linear-gradient(to bottom, #F4E9E9, #ffffff00);
-	animation-delay: 0s;
+.icon#front-icon{
+    animation: fade-in 1s forwards;
+
+    transition-duration: 0.25s;
+    box-shadow: -4px 6px 4px rgba(0, 0, 0, 0.45);
 }
 
-.tab2
-{
-	background-image: linear-gradient(to bottom, #F2F4E9, #ffffff00);
-	animation-delay: 0.25s;
+.icon#front-icon:hover{
+    width: 320px;
+    cursor: none;
 }
 
-.tab3
-{
-	background-image: linear-gradient(to bottom, #EFE9F4, #ffffff00);
-	animation-delay: 0.5s;
+.gallery-row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
 }
 
-.tabImg
-{
-	opacity: 30%;
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-	-webkit-mask-image: linear-gradient(rgba(0,0,0,1), transparent);
-	mask-image: linear-gradient(rgba(0,0,0,1), transparent);
-
-	transition-property: opacity, transform;
-	transition-duration: 0.35s;
-	transition-timing-function: ease-in-out;
+.gallery-column{
+    flex: 25%;
+    max-width: 33%;
+    padding: 0 4px;
 }
 
-.tabImg:hover
-{
-	transform: scale(1.15);
-
-	opacity: 100%;
-	-webkit-filter: blur(2px);
-	filter: blur(2px);
+.gallery-column img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
 }
 
-.tabTitle
-{
-	-webkit-user-select: none;
-	user-select: none;
-	pointer-events: none;
-
-	font-family: 'Poppins', sans-serif;
-	font-weight: 700;
-	font-size: 150%;
-	color: rgb(255, 255, 255);
-	opacity: 0%;
-	text-align: center;
-	line-height: 25px;
-	text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
-	position: absolute;
-	top: 45%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-
-	transition-property: opacity, top;
-	transition-duration: 0.25s;
-	transition-timing-function: ease-in-out;
+.gallery-holder{
+    border-radius: 30px;
+    overflow: hidden;
 }
 
-.tab1:hover .tabTitle{
-	opacity: 100%;
-	top: 50%;
+.gallery-item{
+    opacity: 0;
+    animation: fade-in 1s forwards;
+
+    transition-duration: 0.5s;
 }
 
-.tab2:hover .tabTitle{
-	opacity: 100%;
-	top: 50%;
+@keyframes fade-in{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
-.tab3:hover .tabTitle{
-	opacity: 100%;
-	top: 50%;
-}
-
-.bgContainer
-{
-	overflow: hidden;
-	/* -webkit-mask-image: linear-gradient(rgba(0,0,0,1), 60%, transparent);
-	mask-image: linear-gradient(rgba(0,0,0,1), 60%, transparent); */
-}
-
-.background
-{
-	min-height: 100vh;
-
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-
-	transition-property: transform;
-	transition-duration: 0.4s;
-	transition-timing-function: ease-in-out;
-
-
-}
-
-.bg1
-{
-	background-image: url("images/bg1.jpeg");
-}
-
-.bg2
-{
-	background-image: url("images/bg2.jpeg");
-}
-
-.bg3
-{
-	background-image: url("images/bg3.jpeg");
-}
-
-.bg4
-{
-	background-image: url("https://images.pexels.com/photos/4751278/pexels-photo-4751278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-}
-
-.segmentText
-{
-	font-family: 'Poppins', sans-serif;
-	font-weight: 700;
-	font-size: 50px;
-	background: rgba(0, 0, 0, 0.294);
-	color: #ffffff;
-	text-align: center;
-
-	padding-top: 50vh;
-	padding-bottom: 50vh;
-}
-
-.segmentSmallText
-{
-	font-weight: 200;
-	font-size: large;
+.gallery-item:hover{
+    width: 105%;
 }
