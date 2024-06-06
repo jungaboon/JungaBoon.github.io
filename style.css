@@ -6,8 +6,18 @@
     background-color: rgb(244, 241, 237);
 }
 
+
 a{
     text-decoration: none;
+}
+
+html{
+    overflow: scroll;
+    /* overflow-y: hidden; */
+}
+::-webkit-scrollbar{
+    width: 0;
+    background: transparent;
 }
 
 .menu-holder{
