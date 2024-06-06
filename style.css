@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
 :root{
     font-family: Josefin Sans;
     background-color: rgb(244, 241, 237);
@@ -96,8 +99,8 @@ a{
 }
 
 .gallery-column{
-    flex: 25%;
-    max-width: 33%;
+    flex: 30%;
+    max-width: 25%;
     padding: 0 4px;
 }
 
