@@ -180,15 +180,20 @@ html{
 }
 
 .blog-body{
-    width: 50%;
+    width: 65%;
+    max-width: 900px;
     font-size: 18px;
 }
 
 .blog-header-title{
-    font-size: xx-large;
+    font-size: max(4vw, 24px);
+    font-weight: 900;
+    position: absolute;
+    color: white;
 }
 
 .blog-header-image{
+    background-color: black;
     position: relative;
     overflow: hidden;
     width: 50%;
@@ -201,4 +206,6 @@ html{
 
 .blog-header-image img{
     width: 100%;
+    opacity: 0.4;
+    filter: blur(4px);
 }
