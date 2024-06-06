@@ -14,6 +14,7 @@ a{
 html{
     overflow: scroll;
     /* overflow-y: hidden; */
+    overflow-x: hidden;
 }
 ::-webkit-scrollbar{
     width: 0;
@@ -139,4 +140,65 @@ html{
 
 .gallery-item:hover{
     width: 105%;
+}
+
+.blog-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+.blog-post{
+    display: flex;
+    width: 60%;
+    max-width: 750px;
+}
+
+.blog-thumbnail{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    flex-shrink: 0;
+    border-radius: 15px;
+    animation: fade-in 1s forwards;
+
+}
+
+.blog-blurb{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 25px;
+}
+
+.blurb-title{
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+.blog-body{
+    width: 50%;
+    font-size: 18px;
+}
+
+.blog-header-title{
+    font-size: xx-large;
+}
+
+.blog-header-image{
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    height: 200px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-header-image img{
+    width: 100%;
 }
