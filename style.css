@@ -70,7 +70,8 @@ html{
 
 .sub-title{
     font-size: 18px;
-    width: 40%;
+    width: 80%;
+    max-width: 500px;
     margin: 0px auto;
     text-align: center;
 }
@@ -91,6 +92,8 @@ html{
 }
 
 .icon#front-icon{
+    max-width: 300px;
+    width: 50vw;
     animation: fade-in 1s forwards;
 
     transition-duration: 0.25s;
