@@ -4,21 +4,28 @@
 :root{
     font-family: Josefin Sans;
     background-color: rgb(244, 241, 237);
+
+    --main-theme-color: rgb(197, 70, 114);
 }
 
 
 a{
     text-decoration: none;
+    color: var(--main-theme-color);
 }
 
 html{
     overflow: scroll;
-    /* overflow-y: hidden; */
     overflow-x: hidden;
 }
 ::-webkit-scrollbar{
     width: 0;
     background: transparent;
+}
+
+body{
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .menu-holder{
@@ -39,7 +46,7 @@ html{
 }
 
 .menu-item:hover{
-    color: rgb(197, 70, 114);
+    color: var(--main-theme-color);
     cursor: pointer;
 }
 
@@ -180,6 +187,7 @@ html{
 .blurb-title{
     font-size: xx-large;
     text-decoration: none;
+    color: var(--main-theme-color);
 }
 
 .blog-body{
@@ -191,6 +199,7 @@ html{
 .blog-header-title{
     font-size: max(4vw, 24px);
     font-weight: 900;
+    text-align: center;
     position: absolute;
     color: white;
 }
@@ -199,9 +208,8 @@ html{
     background-color: black;
     position: relative;
     overflow: hidden;
-    width: 50%;
+    width: 100%;
     height: 200px;
-    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -211,4 +219,14 @@ html{
     width: 100%;
     opacity: 0.4;
     filter: blur(4px);
+}
+
+.blog-image{
+    width: 50%;
+    margin: 0px auto;
+}
+
+.blog-image img{
+    width: 100%;
+    border-radius: 25px;
 }
