@@ -137,6 +137,7 @@ body{
 }
 
 .gallery-item{
+    cursor: pointer;
     opacity: 0;
     animation: fade-in 1s forwards;
 
